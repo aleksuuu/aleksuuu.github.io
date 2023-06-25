@@ -1,0 +1,11 @@
+{% if include.url contains "youtube" %}
+  {% include youtube.html url = include.url %}
+{% elsif include.url contains "vimeo" %}
+  {% include vimeo.html url = include.url %}
+{% elsif include.url contains "soundcloud" %}
+  {% include soundcloud.html url = include.url %}
+{% else %}
+  <p>
+    <a href={{ include.url }} target="_blank">{{ include.label }}</a>
+  </p>
+{% endif %}

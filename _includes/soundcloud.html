@@ -1,0 +1,28 @@
+<div id="soundcloud-player"></div>
+
+<script>
+  // JavaScript code to retrieve and display the SoundCloud player
+
+// Get the JSON data of song details with embed code from SoundCloud oEmbed
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", "http://soundcloud.com/oembed?format=js&url=" + "{{ include.url }}" + "&iframe=true", true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = xhr.responseText;
+
+// Clean the JSON to decode
+      var decodeiFrame = response.substring(1, response.length - 2);
+
+// JSON decode to convert it as an object
+      var jsonObj = JSON.parse(decodeiFrame);
+
+// Change the height of the embed player if you want else uncomment below line
+// document.getElementById("soundcloud-player").innerHTML = jsonObj.html;
+
+// Print the embed player to the page
+      var modifiedHtml = jsonObj.html.replace('height="400"', 'height="140"');
+      document.getElementById("soundcloud-player").innerHTML = modifiedHtml;
+    }
+  };
+  xhr.send();
+</script>

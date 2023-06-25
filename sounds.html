@@ -1,0 +1,24 @@
+---
+layout: default
+title: Sounds
+---
+<h2>
+  Tags
+</h2>
+<p>
+  {% for tag in site.tags %}
+    <a href="{{ site.baseurl }}/tags/{{ tag.tag_name }}" class="tag">
+      {{ tag.tag_name | replace: "-", "&nbsp;" }}</a>
+  {% endfor %}
+</p>
+
+<h2>
+  Works
+</h2>
+<ul class="no-indent">
+  {% for work in site.sounds reversed %}
+    <li>
+      {% include work-row.html %}
+    </li>
+  {% endfor %}
+</ul>

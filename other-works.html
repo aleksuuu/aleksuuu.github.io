@@ -1,0 +1,11 @@
+---
+layout: default
+title: Other Works
+---
+<ul class="no-indent">
+  {% for work in site.sounds reversed %}
+    <li>
+      {% include work-row.html %}
+    </li>
+  {% endfor %}
+</ul>

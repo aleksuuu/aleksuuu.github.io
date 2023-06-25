@@ -1,0 +1,2 @@
+{% assign formatted = include.url | replace: "vimeo.com", "player.vimeo.com/video" %}
+{% include video-embed-default.html url = formatted %}

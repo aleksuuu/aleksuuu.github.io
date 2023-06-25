@@ -1,0 +1,14 @@
+<nav>
+  <ul>
+    <li>
+      <header id="site-header">
+        <a href="/">Alexander Wu</a>
+      </header>
+    </li>
+    {% for item in site.data.navigation %}
+      <li>
+        <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

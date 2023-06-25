@@ -1,0 +1,22 @@
+<section>
+  <p class="compact-below">
+    <b>
+      <a href="{{ work.url }}">{{ work.title_stylized }}</a>
+    </b>
+    <span class="secondary">{{ work.medium }} ({{ work.date | date: "%Y" }})</span>
+  </p>
+
+  <!--using a ul here for indentation-->
+  <ul>
+    <li>
+      <p class="compact-above">
+        {% if work.score %}
+          <a href="{{ site.baseurl }}/assets/pdfs/{{ work.score }}" target="_blank">score</a>
+        {% endif %}
+        {% for url_label in work.media_links %}
+          <a href={{ url_label.url }} target="_blank">{{ url_label.label }}</a>
+        {% endfor %}
+      </p>
+    </li>
+  </ul>
+</section>

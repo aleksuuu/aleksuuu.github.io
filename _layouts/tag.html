@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<div>
+  <h2>{{ page.tag_name | replace: "-", "&nbsp;" }}</h2>
+  <ul class="no-indent">
+    {% for work in site.sounds %}
+      {% if work.tags contains page.tag_name %}
+        <li>
+          {% include work-row.html %}
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>

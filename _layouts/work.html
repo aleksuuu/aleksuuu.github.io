@@ -1,0 +1,49 @@
+---
+layout: default
+---
+{% if page.dedication %}
+  <p>Dedicated to {{ page.dedication }}</p>
+{% endif %}
+{% if page.dedication %}
+  <p>Commissioned by {{ page.commission }}</p>
+{% endif %}
+
+<div class="work">
+  <h1>
+    {{ page.title_stylized }}
+    <span class="secondary">({{ page.date | date: "%Y" }})</span>
+  </h1>
+  <p>
+    {{ page.medium }}<br>{{ page.duration }}<br>
+    {{ page.credit }}
+    {% if page.score %}
+      <a href="{{ site.baseurl }}/assets/pdfs/{{ page.score }}" target="_blank">score</a>
+    {% endif %}
+  </p>
+  {% for url_label in page.media_links %}
+    {% assign url = url_label.url %}
+    {% if url contains "youtube" %}
+      {% include youtube.html url = url %}
+    {% elsif url contains "vimeo" %}
+      {% include vimeo.html url = url %}
+    {% elsif url contains "soundcloud" %}
+      {% include soundcloud.html url = url %}
+    {% else %}
+      <p>
+        <a href={{ url }} target="_blank">{{ url_label.label }}</a>
+      </p>
+    {% endif %}
+  {% endfor %}
+  <p>
+    {% for tag in page.tags %}
+      <a href="{{ site.baseurl }}/tags/{{ tag }}" class="tag secondary">{{ tag | replace: "-", "&nbsp;" }}</a>
+    {% endfor %}
+  </p>
+  {% comment %}
+  in case there is a new line (sometimes text editors might add an empty new line at the end of the file)  
+  {% endcomment %}{% assign content = page.content | strip_newlines %}
+  {% if content != "" %}
+    <h2>Program Note</h2>
+    {{ content }}
+  {% endif %}
+</div>

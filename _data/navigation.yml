@@ -1,0 +1,10 @@
+- name: Home
+  link: /
+- name: About
+  link: /about.html
+- name: Sounds
+  link: /sounds.html
+- name: Other Works
+  link: /other-works.html
+- name: Contact
+  link: /contact.html
