@@ -35,7 +35,6 @@ imgurl: "assets/images"
 
 
 # Build settings
-theme: no-style-please
 plugins:
   - jekyll-feed
 
