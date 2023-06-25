@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta name="description" content="{{ site.description }}">
     <title>{{ site.title }} - {{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href={{ "/assets/css/styles.css"| relative_url }}>
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Crimson Text" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair Display" rel="stylesheet">
-    <script src="assets/js/open-external-in-new.js"></script>
+    <script src={{ "assets/js/open-external-in-new.js" | relative_url }}></script>
   </head>
   <body>
     <div class="not-footer">
