@@ -5,7 +5,7 @@
 
 // Get the JSON data of song details with embed code from SoundCloud oEmbed
   var xhr = new XMLHttpRequest();
-  xhr.open("GET", "http://soundcloud.com/oembed?format=js&url=" + "{{ include.url }}" + "&iframe=true", true);
+  xhr.open("GET", "https://soundcloud.com/oembed?format=js&url=" + "{{ include.url }}" + "&iframe=true", true);
   xhr.onreadystatechange = function() {
     if (xhr.readyState === 4 && xhr.status === 200) {
       var response = xhr.responseText;
