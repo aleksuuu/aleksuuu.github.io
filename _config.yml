@@ -24,8 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   His music explores the relationships that exist within sound, between sound and society, 
   and among those who make sound. He has composed in and between various styles, 
   including contemporary classical, jazz, and electronic music. 
-  His work is often inspired by noise, the physicality of sound, and the intervening space created through the translation of a medium, language, or culture. 
-  He is currently pursuing his BMus in both Composition and Electronic Production and Design with a minor in Creative Coding at Berklee College of Music.
+  His work is often inspired by noise, the physicality of sound, and the intervening space created through the translation of a medium, language, or culture.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 pdfurl: "assets/pdfs"

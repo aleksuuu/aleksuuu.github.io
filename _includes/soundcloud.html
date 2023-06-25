@@ -1,7 +1,7 @@
 <div id="soundcloud-player"></div>
 
 <script>
-  // JavaScript code to retrieve and display the SoundCloud player
+  // JavaScript code to retrieve and display the SoundCloud player modified from https://stackoverflow.com/a/27461646/20268440
 
 // Get the JSON data of song details with embed code from SoundCloud oEmbed
   var xhr = new XMLHttpRequest();
@@ -16,10 +16,7 @@
 // JSON decode to convert it as an object
       var jsonObj = JSON.parse(decodeiFrame);
 
-// Change the height of the embed player if you want else uncomment below line
-// document.getElementById("soundcloud-player").innerHTML = jsonObj.html;
-
-// Print the embed player to the page
+// Change the height of the embed player and print the embed player to the page
       var modifiedHtml = jsonObj.html.replace('height="400"', 'height="140"');
       document.getElementById("soundcloud-player").innerHTML = modifiedHtml;
     }
