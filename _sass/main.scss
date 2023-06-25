@@ -2,10 +2,13 @@
 $primary-color: black;
 $primary-background-color: white;
 $accent-color: rgb(0, 128, 0);
-$secondary-accent-color: rgba(0, 128, 0, 0.5);
+$secondary-accent-color: rgba($accent-color, 0.5);
+$tertiary-accent-color: #ddf5db;
 $secondary-color: gray;
 $footer-background-color: rgba(128, 128, 128, 0.05);
 $footer-divider-color: #e5e5e5;
+
+$box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, .075);
 
 // FONTS
 $title-font: "Crimson Text", Georgia, "Times New Roman", serif;
@@ -96,7 +99,7 @@ main {
   border-top: 1px solid $footer-divider-color;
   background-color: $footer-background-color; /* Adjust the background color as needed */
   text-align: center;
-  padding: $default-padding; 
+  padding: $default-padding;
   color: $secondary-color;
 }
 
@@ -110,22 +113,24 @@ main {
 
 .tag {
   padding: $default-padding * 0.5;
-  border: 1px;
-  border-style: solid;
-  border-color: $secondary-accent-color;
+  box-shadow: $box-shadow;
+  border: 1px solid $tertiary-accent-color;
   line-height: $default-line-height * 1.75;
   text-decoration: none;
   border-radius: 5px;
 }
 
 .video {
-  aspect-ratio: 16/9;
+  aspect-ratio: 16 / 9;
   width: 100%;
 }
 
 .secondary {
   color: $secondary-color;
   font-size: 75%;
+  a {
+    color: $secondary-color;
+  }
 }
 
 .work {
@@ -154,14 +159,67 @@ main {
 }
 
 
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 20px;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: auto auto;
+  box-shadow: $box-shadow;
+  border: 1px solid $tertiary-accent-color;
+  padding: $default-padding;
+  padding-top: $default-padding * 2;
+  .video {
+    display: block;
+    margin: auto;
+  }
+  img {
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: scale-down;
+    object-position: top;
+  }
+  text-align: center;
+}
+
+table {
+  display: block;
+  max-width: fit-content;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid $tertiary-accent-color;
+  box-shadow: $box-shadow;
+  overflow-x: auto;
+}
+
+th {
+  font-family: $title-font;
+  background-color: $tertiary-accent-color;
+}
+td {
+  padding: $default-padding;
+}
+th, td {
+  border: 1px solid $secondary-accent-color;
+  overflow-wrap: break-word;
+  min-width: $sectional-padding;
+}
+
+
 /* Media query for smaller screens */
 @media screen and (max-width: 850px) {
   main {
-    width: 40%;
+    width: 50%;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .not-footer {
     display: flex;
     flex-direction: column;
@@ -169,11 +227,17 @@ main {
   }
 
   nav {
-    padding-left: 0px;
+    padding-left: 0;
     width: auto;
   }
   main {
-    padding-top: 0px;
+    padding-top: 0;
     width: 80%;
   }
+}
+
+
+
+.wut {
+  display: none;
 }

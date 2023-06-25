@@ -17,22 +17,11 @@ layout: default
     {{ page.medium }}<br>{{ page.duration }}<br>
     {{ page.credit }}
     {% if page.score %}
-      <a href="{{ site.baseurl }}/assets/pdfs/{{ page.score }}" target="_blank">score</a>
+      <a href="{{ site.baseurl }}/{{ site.pdfurl }}/{{ page.score }}" target="_blank">score</a>
     {% endif %}
   </p>
   {% for url_label in page.media_links %}
-    {% assign url = url_label.url %}
-    {% if url contains "youtube" %}
-      {% include youtube.html url = url %}
-    {% elsif url contains "vimeo" %}
-      {% include vimeo.html url = url %}
-    {% elsif url contains "soundcloud" %}
-      {% include soundcloud.html url = url %}
-    {% else %}
-      <p>
-        <a href={{ url }} target="_blank">{{ url_label.label }}</a>
-      </p>
-    {% endif %}
+    {% include embedded-player.html url = url_label.url label = url_label.label %}
   {% endfor %}
   <p>
     {% for tag in page.tags %}

@@ -1,0 +1,11 @@
+- url: "https://www.youtube.com/watch?v=zvCi2rpp7cE"
+  blurb: "<i>this is not going to be interesting</i>. Fixed media with video by Anqi Wang. 
+  <a href='sounds/this-is-not-going-to-be-interesting' class='secondary'>Read&nbsp;More</a>"
+- url: "https://www.youtube.com/watch?v=xGNFtx2NHdM"
+  blurb: "<i>Between the Nights</i> for solo cello. Performed by Ariel Barnes. 
+  <a href='sounds/between-the-nights' class='secondary'>Read&nbsp;More</a>"
+- url: "https://soundcloud.com/aleksuuu/abloom-possibly"
+  blurb: "<i>Abloom (Possibly)</i> for solo trumpet and live electronics. Performed by Sam Wells. 
+  <a href='sounds/abloom-possibly' class='secondary'>Read&nbsp;More</a>"
+- url: "ectone-screenshot.png"
+  blurb: "<a href='https://aleksuuu.github.io/ectone/'>ectone</a>: an online microtonal ear training tool."

@@ -28,6 +28,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   He is currently pursuing his BMus in both Composition and Electronic Production and Design with a minor in Creative Coding at Berklee College of Music.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+pdfurl: "assets/pdfs"
+imgurl: "assets/images"
 # twitter_username: jekyllrb
 # github_username:  jekyll
 

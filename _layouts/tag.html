@@ -8,7 +8,7 @@ layout: default
     {% for work in site.sounds %}
       {% if work.tags contains page.tag_name %}
         <li>
-          {% include work-row.html %}
+          {% include work-row.html work=work %}
         </li>
       {% endif %}
     {% endfor %}

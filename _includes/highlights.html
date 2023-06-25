@@ -1,13 +1,8 @@
 <div class="cards">
-  <div class="card">
-    <header>
-      <h2>
-        <i>Between the Nights</i>
-      </h2>
-    </header>
-    {% include youtube.html url = "https://www.youtube.com/watch?v=xGNFtx2NHdM" %}
-    <p>
-      <a href="">More</a>
-    </p>
-  </div>
+  {% for highlight in site.data.highlights %}
+    {% include highlight-card.html 
+     title = highlight.title
+     url = highlight.url
+     blurb = highlight.blurb %}
+  {% endfor %}
 </div>

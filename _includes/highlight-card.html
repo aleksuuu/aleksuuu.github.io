@@ -1,13 +1,12 @@
-<div class="cards">
-  <div class="card">
-    <header>
-      <h2>
-        <i>{{ include.title }}</i>
-      </h2>
-    </header>
-    {% include youtube.html url = "https://www.youtube.com/watch?v=xGNFtx2NHdM" %}
-    <p>
-      <a href="">More</a>
-    </p>
-  </div>
+<div class="card">
+  {% if include.url contains "youtube" or include.url contains "vimeo" or include.url contains "soundcloud" %}
+    {% include embedded-player.html url = include.url label = include.label %}
+    {% comment %}
+    else: link to an image
+    {% endcomment %}{% else %}
+    <img src="{{ site.baseurl }}/{{ site.imgurl }}/{{ include.url }}" alt="{{ include.label }}">
+  {% endif %}
+  <p class="secondary">
+    {{ include.blurb }}
+  </p>
 </div>

@@ -18,7 +18,7 @@ title: Sounds
 <ul class="no-indent">
   {% for work in site.sounds reversed %}
     <li>
-      {% include work-row.html %}
+      {% include work-row.html work=work %}
     </li>
   {% endfor %}
 </ul>
