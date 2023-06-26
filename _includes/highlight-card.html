@@ -1,10 +1,10 @@
 <div class="card">
   {% if include.url contains "youtube" or include.url contains "vimeo" or include.url contains "soundcloud" %}
-    {% include embedded-player.html url = include.url label = include.label %}
+    {% include embedded-player.html url = include.url label = include.alt %}
     {% comment %}
     else: link to an image
     {% endcomment %}{% else %}
-    <img src="{{ site.baseurl }}/{{ site.imgurl }}/{{ include.url }}" alt="{{ include.label }}">
+    <img src="{{ site.baseurl }}/{{ site.imgurl }}/{{ include.url }}" alt="{{ include.alt }}">
   {% endif %}
   <p class="secondary">
     {{ include.blurb }}

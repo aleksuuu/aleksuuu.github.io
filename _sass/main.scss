@@ -163,6 +163,7 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   grid-gap: 20px;
+  max-width: 729px; /* max 2 columns: 230 * 3 + 20 * 2 - 1 */
 }
 
 .card {
@@ -172,12 +173,16 @@ main {
   border: 1px solid $tertiary-accent-color;
   padding: $default-padding;
   padding-top: $default-padding * 2;
+  text-align: center;
   .video {
     display: block;
     margin: auto;
   }
+  #soundcloud-player {
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
   img {
-    object-fit: cover;
     display: block;
     margin: auto;
     width: 100%;
@@ -185,7 +190,7 @@ main {
     object-fit: scale-down;
     object-position: top;
   }
-  text-align: center;
+  
 }
 
 table {
