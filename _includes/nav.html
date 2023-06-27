@@ -7,7 +7,8 @@
     </li>
     {% for item in site.data.navigation %}
       <li>
-        <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+        {% assign linkWithHtml = item.link | append: ".html" %}
+        <a href="{{ item.link }}" {% if page.url == linkWithHtml or page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
       </li>
     {% endfor %}
   </ul>

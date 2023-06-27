@@ -26,7 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   including contemporary classical, jazz, and electronic music. 
   His work is often inspired by noise, the physicality of sound, and the intervening space created through the translation of a medium, language, or culture.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://aleksuuu.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 pdfurl: "assets/pdfs"
 imgurl: "assets/images"
 # twitter_username: jekyllrb
