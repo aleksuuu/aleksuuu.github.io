@@ -5,7 +5,7 @@ layout: default
 <div>
   <h2>{{ page.tag_name | replace: "-", "&nbsp;" }}</h2>
   <ul class="no-indent">
-    {% for work in site.sounds %}
+    {% for work in site.sounds reversed %}
       {% if work.tags contains page.tag_name %}
         <li>
           {% include work-row.html work=work %}

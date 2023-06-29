@@ -4,18 +4,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="description" content="{{ site.description }}">
-    <title>{{ site.title }} - {{ page.title }}</title>
-    <link rel="stylesheet" href={{ "/assets/css/styles.css"| relative_url }}>
-    <!--FONTS-->
-    <link href="https://fonts.googleapis.com/css?family=Crimson Text" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair Display" rel="stylesheet">
-    <script src={{ "assets/js/open-external-in-new.js" | relative_url }}></script>
+    <title>{{ site.title }} -
+      {% if page.title_stylized %}
+        {{ page.title_stylized | strip_html }}
+      {% else %}
+        {{ page.title }}
+{% endif %}
+</title>
+      <link rel="stylesheet" href={{ "/assets/css/styles.css"| relative_url }}>
+      <!--FONTS-->
+      <link href="https://fonts.googleapis.com/css?family=Crimson Text" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Playfair Display" rel="stylesheet">
+      <script src={{ "assets/js/open-external-in-new.js" | relative_url }}></script>
+    </head>
+    <body>
+      <div class="not-footer">
+        {% include nav.html %}
+        <main>{{ content }}</main>
+      </div>
+      {% include footer.html %}</body>
   </head>
-  <body>
-    <div class="not-footer">
-      {% include nav.html %}
-      <main>{{ content }}</main>
-    </div>
-    {% include footer.html %}
-  </body>
 </html>

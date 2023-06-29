@@ -2,10 +2,14 @@
 layout: default
 ---
 {% if page.dedication %}
-  <p>Dedicated to {{ page.dedication }}</p>
+  <p>
+    <i>Dedicated to {{ page.dedication }}</i>
+  </p>
 {% endif %}
-{% if page.dedication %}
-  <p>Commissioned by {{ page.commission }}</p>
+{% if page.commission %}
+  <p>
+    <i>Commissioned by {{ page.commission }}</i>
+  </p>
 {% endif %}
 
 <div class="work">
@@ -15,7 +19,9 @@ layout: default
   </h1>
   <p>
     {{ page.medium }}<br>{{ page.duration }}<br>
-    {{ page.credit }}
+    {% if page.credit %}
+      {{ page.credit }}<br>
+    {% endif %}
     {% if page.score %}
       <a href="{{ site.baseurl }}/{{ site.pdfurl }}/{{ page.score }}" target="_blank">score</a>
     {% endif %}

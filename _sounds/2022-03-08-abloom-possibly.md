@@ -2,6 +2,7 @@
 title_stylized: "<i>Abloom (Possibly)</i>"
 duration: 5<i>'</i> 30<i>"</i>
 medium: for solo trumpet in C and live electronics
+score: "Wu-Abloom_Possibly.pdf"
 media_links: 
     - 
         label: recording
