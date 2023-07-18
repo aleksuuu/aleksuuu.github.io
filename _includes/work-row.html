@@ -13,11 +13,15 @@
       <p class="compact-above">
         {% if work.score %}
           <a href="{{ site.baseurl }}/{{ site.pdfurl }}/{{ work.score }}" target="_blank">score</a>
-        {% endif %}
-        {% for url_label in work.media_links %}
-          <a href={{ url_label.url }} target="_blank">{{ url_label.label }}</a>
-        {% endfor %}
-      </p>
+          {%- if work.media_links %}/{%- endif %}{% endif %}
+          {%- for url_label in work.media_links %}
+            {%- if forloop.length > 0 -%}
+              <a href={{ url_label.url }} target="_blank">{{ url_label.label }}</a>
+              {% unless forloop.last %}/{% endunless -%}
+            {%- endif -%}
+          {%- endfor -%}
+        </p>
+      </li>
     </li>
   </ul>
 </section>
