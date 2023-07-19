@@ -34,8 +34,6 @@ body {
   padding-top: $default-padding;
 }
 
-
-
 p {
   line-height: $default-line-height;
 }
@@ -52,6 +50,10 @@ a {
 
 .current {
   color: $accent-color;
+}
+
+img {
+  max-width: 100%;
 }
 
 
@@ -158,7 +160,6 @@ main {
   padding-left: 0;
 }
 
-
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
@@ -190,7 +191,6 @@ main {
     object-fit: scale-down;
     object-position: top;
   }
-  
 }
 
 table {
