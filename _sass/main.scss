@@ -12,7 +12,7 @@ $box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, .075);
 
 // FONTS
 $title-font: "Crimson Text", Georgia, "Times New Roman", serif;
-$body-font: "Playfair Display", Georgia, "Times New Roman", serif;
+$body-font: Bitter, Georgia, "Times New Roman", serif;
 
 // NUMBERS
 $sectional-padding: 50px;
@@ -101,8 +101,14 @@ main {
   border-top: 1px solid $footer-divider-color;
   background-color: $footer-background-color; /* Adjust the background color as needed */
   text-align: center;
-  padding: $default-padding;
+  padding: $default-padding * 2;
   color: $secondary-color;
+}
+
+.social-icon {
+  width: 25px;
+  height: 25px;
+  padding: 0 $default-padding;
 }
 
 .back-to-top {
