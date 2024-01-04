@@ -4,10 +4,11 @@ title: Other Works
 ---
 ## Tools
 
-| Name | Description | Category | Status | Link |
-| :---: | :---: | :---: | :---: | :---: |
-| ectone | Microtonal ear training tool | Web | Active development | [Website](https://aleksuuu.github.io/ectone/)
-| VariTuner | Microtonal Tuner | iOS | Active development | [GitHub](https://github.com/aleksuuu/VariTuner)
+| Name       | Description                                              | Category | Status             | Link                                            |
+|:----------:|:--------------------------------------------------------:|:--------:|:------------------:|:-----------------------------------------------:|
+| ectone     | Microtonal ear training tool                             | Web      | Active development | [Website](https://aleksuuu.github.io/ectone/)   |
+| VariTuner  | Microtonal Tuner                                         | iOS      | Active development | [GitHub](https://github.com/aleksuuu/VariTuner) |
+| Ad Enabler | Skip the boring videos on YouTube and enjoy all the ads! | Web      | Published          |                                                 |
 
 ## Games
 
