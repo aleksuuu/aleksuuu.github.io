@@ -8,7 +8,7 @@ title: Other Works
 |:----------:|:--------------------------------------------------------:|:--------:|:------------------:|:-----------------------------------------------:|
 | ectone     | Microtonal ear training tool                             | Web      | Active development | [Website](https://aleksuuu.github.io/ectone/)   |
 | VariTuner  | Microtonal Tuner                                         | iOS      | Active development | [GitHub](https://github.com/aleksuuu/VariTuner) |
-| Ad Enabler | Skip the boring videos on YouTube and enjoy all the ads! | Web      | Published          |                                                 |
+| Ad Enabler | Skip the boring videos on YouTube and enjoy all the ads! | Web      | Published 		| [GreasyFork](https://greasyfork.org/en/scripts/483907-ad-enabler) | 
 
 ## Games
 
