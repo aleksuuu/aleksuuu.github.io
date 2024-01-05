@@ -1,6 +1,10 @@
 {
-    "files.associations": {
-        "*.html": "liquid",
-        "*.scss": "liquid-scss"
-    }
+  "files.associations": {
+    "*.html": "liquid",
+    "*.scss": "liquid-scss"
+  },
+  "[liquid]": {
+    "editor.defaultFormatter": "sissel.shopify-liquid",
+    "editor.formatOnSave": true
+  }
 }
