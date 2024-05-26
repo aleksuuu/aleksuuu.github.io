@@ -3,9 +3,9 @@ title_stylized: "<i>(intro)introintrointrointrointr</i>"
 duration: 8<i>'</i>
 medium: for flute, clarinet, accordion, piano, violin, viola, and cello
 score: "Wu-intros.pdf"
-# media_links:
-#   - label: recording
-#     url: https://www.youtube.com/watch?v=dtFImEFU2N4
+media_links:
+  - label: recording
+    url: https://soundcloud.com/aleksuuu/introintrointrointrointrointr
 tags: chamber
 ---
 
