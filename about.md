@@ -10,7 +10,7 @@ title: About
 
 ## Long Bio
 
-Alexander Wu is a composer, pianist, electronic producer, improviser, and programmer. His artistic endeavors delve into the intricate relationships within sound, exploring the interplay between sound and society, as well as the connections among those who create it. His work often draws inspiration from noise, the physicality of sound, and the translation between mediums, languages, and cultures.
+Alexander Wu is a composer, pianist, electronic producer, improviser, and programmer based in Baltimore, MD. He is interested in the relationships within sound, the interplay between sound and society, as well as the connections among those who create it. His work often draws inspiration from noise, the physicality of sound, and the translation between mediums, languages, and cultures.
 
 ![Alexander playing the piano behind plants, shea butter, and a few books titled "Sellout" placed on black shelves]({{ site.imgurl | absolute_url }}/gardner-portrait.png){: width="200" style="float: right; padding: 5px;" }
 

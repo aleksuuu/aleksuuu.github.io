@@ -20,7 +20,7 @@
 
 title: Alexander Wu
 description: >- # this means to ignore newlines until "baseurl:"
-  Alexander Wu is a composer, pianist, electronic producer, improviser, and programmer based in Baltimore, MD. His artistic endeavors delve into the intricate relationships within sound, exploring the interplay between sound and society, as well as the connections among those who create it. His work often draws inspiration from noise, the physicality of sound, and the translation between mediums, languages, and cultures. After graduating *summa cum laude* from Berklee College of Music with a bachelor's degree in Composition and Electronic Production and Design in 2023, Alexander is currently pursuing a master's degree in Composition at the Peabody Institute.
+  Alexander Wu is a composer, pianist, electronic producer, improviser, and programmer based in Baltimore, MD. He is interested in the relationships within sound, the interplay between sound and society, as well as the connections among those who create it. His work often draws inspiration from noise, the physicality of sound, and the translation between mediums, languages, and cultures. After graduating _summa cum laude_ from Berklee College of Music with a bachelor’s degree in Composition and Electronic Production and Design in 2023, Alexander is currently pursuing a master’s degree in Composition at the Peabody Institute.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://aleksuuu.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 pdfurl: "assets/pdfs"
