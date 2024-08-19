@@ -7,20 +7,24 @@ $tertiary-accent-color: #ddf5db;
 $secondary-color: gray;
 $footer-background-color: rgba(128, 128, 128, 0.05);
 $footer-divider-color: #e5e5e5;
+$cursor-default: url("../images/cursor-pause.svg");
+$cursor-pointer: url("../images/cursor-play.svg");
 
-$box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, .075);
+$box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 
 // FONTS
-$title-font: "Crimson Text", Georgia, "Times New Roman", serif;
-$body-font: Bitter, Georgia, "Times New Roman", serif;
+$title-font: Bitter, serif;
+$body-font: Poppins, sans-serif;
 
 // NUMBERS
 $sectional-padding: 50px;
 $default-padding: 10px;
-$header-padding: 90px; // to place content below header
+$header-padding: 90px;
+// to place content below header
 $default-line-height: 1.5rem;
 
 body {
+  cursor: $cursor-default, auto;
   background: $primary-background-color;
   color: $primary-color;
   overflow-x: hidden;
@@ -46,10 +50,15 @@ h1,
 h2,
 h3 {
   font-family: $title-font;
+  font-weight: 100;
 }
 
 a {
   color: $primary-color;
+   &:hover {
+    cursor: $cursor-pointer, auto;
+    font-weight: 500;
+  }
 }
 
 .current {
@@ -74,7 +83,7 @@ nav {
 }
 
 .nav-item {
-  font-weight: 500;
+  font-weight: 200;
 }
 
 li {
@@ -86,7 +95,7 @@ li {
   font-size: 200%;
   padding: $sectional-padding * 0.25;
   border-bottom: 1px solid $accent-color;
-  font-weight: 600;
+  font-weight: 100;
   a {
     text-decoration: none;
   }
@@ -108,7 +117,8 @@ main {
 
 #site-footer {
   border-top: 1px solid $footer-divider-color;
-  background-color: $footer-background-color; /* Adjust the background color as needed */
+  background-color: $footer-background-color;
+  /* Adjust the background color as needed */
   text-align: center;
   padding: $default-padding * 2;
   color: $secondary-color;
@@ -159,7 +169,7 @@ main {
   }
   h2 {
     margin-block-start: 1em;
-    margin-block-end: 0.3em;
+    margin-block-end: 0.5em;
   }
 }
 
@@ -179,7 +189,8 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   grid-gap: 20px;
-  max-width: 729px; /* max 2 columns: 230 * 3 + 20 * 2 - 1 */
+  max-width: 729px;
+  /* max 2 columns: 230 * 3 + 20 * 2 - 1 */
 }
 
 .card {
@@ -196,13 +207,13 @@ main {
   }
   #soundcloud-player {
     width: 100%;
-    aspect-ratio: 16/9;
+    aspect-ratio: 16 / 9;
   }
   img {
     display: block;
     margin: auto;
     width: 100%;
-    aspect-ratio: 16/9;
+    aspect-ratio: 16 / 9;
     object-fit: scale-down;
     object-position: top;
   }
@@ -225,7 +236,8 @@ th {
 td {
   padding: $default-padding;
 }
-th, td {
+th,
+td {
   border: 1px solid $secondary-accent-color;
   overflow-wrap: break-word;
   min-width: $sectional-padding;
@@ -255,7 +267,6 @@ th, td {
     width: 80%;
   }
 }
-
 
 
 .wut {
