@@ -1,6 +1,7 @@
 // COLORS
-$primary-color: black;
-$primary-background-color: white;
+$primary-color: rgba(0, 0, 0, 0.7);
+$primary-background-color: rgba(0, 0, 0, 0.04);
+$transparent-color: rgba(0,0,0,0);
 $accent-color: rgb(0, 128, 0);
 $secondary-accent-color: rgba($accent-color, 0.5);
 $tertiary-accent-color: #ddf5db;
@@ -55,9 +56,16 @@ h3 {
 
 a {
   color: $primary-color;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $transparent-color;
    &:hover {
+    color: $secondary-accent-color;
     cursor: $cursor-pointer, auto;
-    font-weight: 500;
+    border-color: $primary-color;
+  }
+  &:has(img) {
+    border: none;
   }
 }
 
