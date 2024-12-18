@@ -6,11 +6,13 @@ title: About
 ## Short Bio
 
 ![A black and white photo of Alexander wearing a black scarf looking back at the camera]({{ site.imgurl | absolute_url }}/headshot.jpg){: width="175" style="float: right; padding: 5px;" }
-{{ site.description | markdownify }}
+<!-- {{ site.description | markdownify }} -->
+Alexander Wu is a composer, pianist, electronic producer, improviser, and programmer based in Baltimore, MD. His music is a constant temporal/spatial negotiation between what is possible and what is not. Within the extremes of physicality, logic, and perception, he morphs memories and unearths emotional subtleties difficult to access through other mediums. After graduating _summa cum laude_ from Berklee College of Music with a bachelor’s degree in Composition and Electronic Production and Design in 2023, Alexander is currently pursuing a master’s degree in Composition at the Peabody Institute, studying with Dr. Sky Macklay.
+
 
 ## Long Bio
 
-Alexander Wu’s music is a constant temporal/spatial negotiation of what is possible and what is not. He is drawn to the elastic temporalities unique to sound. As time gets compressed or repeated, there comes a moment when it becomes a spatial object. These fascinatingly fragile moments of transformation help Alexander push toward the edge of possibilities. Within the extremes of physicality, logic, and perception, he morphs memories and unearths emotional subtleties difficult to access through other mediums.
+Alexander Wu’s music is a constant temporal/spatial negotiation between what is possible and what is not. He is drawn to the elastic temporalities unique to sound. As time gets compressed or repeated, there comes a moment when it becomes a spatial object. These fascinatingly fragile moments of transformation help Alexander push toward the edge of possibilities. Within the extremes of physicality, logic, and perception, he morphs memories and unearths emotional subtleties difficult to access through other mediums.
 
 ![Alexander playing the piano behind plants, shea butter, and a few books titled “Sellout” placed on black shelves]({{ site.imgurl | absolute_url }}/gardner-portrait.png){: width="200" style="float: right; padding: 5px;" }
 
