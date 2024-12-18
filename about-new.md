@@ -10,7 +10,7 @@ title: About
 
 ## Long Bio
 
-Alexander Wu’s music is a constant temporal/spatial negotiation of what is possible and what is not. Unique to sound as a medium is its temporal properties, and when compressed or restated enough, time becomes a spatial object. Using such elastic transformations between time and space, Alexander morphs memories and unearths emotional subtleties difficult to access through other mediums.
+Alexander Wu’s music is a constant temporal/spatial negotiation of what is possible and what is not. He is drawn to the elastic temporalities unique to sound. As time gets compressed or repeated, there comes a moment when it becomes a spatial object. These fascinatingly fragile moments of transformation help Alexander push toward the edge of possibilities. Within the extremes of physicality, logic, and perception, he morphs memories and unearths emotional subtleties difficult to access through other mediums.
 
 ![Alexander playing the piano behind plants, shea butter, and a few books titled “Sellout” placed on black shelves]({{ site.imgurl | absolute_url }}/gardner-portrait.png){: width="200" style="float: right; padding: 5px;" }
 
