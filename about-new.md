@@ -7,11 +7,11 @@ title: About
 
 ![A black and white photo of Alexander wearing a black scarf looking back at the camera]({{ site.imgurl | absolute_url }}/headshot.jpg){: width="175" style="float: right; padding: 5px;" }
 <!-- {{ site.description | markdownify }} -->
-Alexander Wu is a composer, pianist, electronic producer, improviser, and programmer based in Baltimore, MD. His music is a constant spatiotemporal negotiation between what is possible and what is not. In physical, logical, and perceptual extremities he morphs memories to reveal emotional subleties difficult to access through other mediums. After graduating _summa cum laude_ from Berklee College of Music with a bachelor’s degree in Composition and Electronic Production and Design in 2023, Alexander is currently pursuing a master’s degree in Composition at the Peabody Institute, studying with Dr. Sky Macklay.
+Alexander Wu is a composer, pianist, electronic producer, improviser, and programmer based in Baltimore, MD. His music is a constant spatiotemporal negotiation between what is possible and what is not. In physical, logical, and perceptual extremities, he morphs memories to reveal emotional subleties difficult to access through other mediums. After graduating _summa cum laude_ from Berklee College of Music with a bachelor’s degree in Composition and Electronic Production and Design in 2023, Alexander is currently pursuing a master’s degree in Composition at the Peabody Institute, studying with Dr. Sky Macklay.
 
 ## Long Bio
 
-Alexander Wu’s music is a constant spatiotemporal negotiation between what is possible and what is not. He is drawn to the elastic temporalities unique to sound: as time gets compressed or repeated, there comes a moment when it becomes a spatial object. These fascinatingly fragile moments of transformation help Alexander push his music toward the edge of physicality, logic, and perception. In these extremities he morphs memories to reveal emotional subtleties difficult to access through other mediums.
+Alexander Wu’s music is a constant spatiotemporal negotiation between what is possible and what is not. He is drawn to the elastic temporalities unique to sound: as time gets compressed or repeated, there comes a moment when it becomes a spatial object. These fascinatingly fragile moments of transformation help Alexander push his music toward the edge of physicality, logic, and perception. In these extremities, he morphs memories to reveal emotional subtleties difficult to access through other mediums.
 
 ![Alexander playing the piano behind plants, shea butter, and a few books titled “Sellout” placed on black shelves]({{ site.imgurl | absolute_url }}/gardner-portrait.png){: width="200" style="float: right; padding: 5px;" }
 
