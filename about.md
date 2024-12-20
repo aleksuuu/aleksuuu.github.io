@@ -6,8 +6,7 @@ title: About
 ## Short Bio
 
 ![A black and white photo of Alexander wearing a black scarf looking back at the camera]({{ site.imgurl | absolute_url }}/headshot.jpg){: width="175" style="float: right; padding: 5px;" }
-<!-- {{ site.description | markdownify }} -->
-Alexander Wu is a composer, pianist, electronic producer, improviser, and programmer based in Baltimore, MD. His music is a constant negotiation between what is possible and present and what is not. In physical, logical, and perceptual extremities, he reconstructs memories, and with these sonic alterations, he captures emotional subtleties that are difficult to access through other mediums. After graduating _summa cum laude_ from Berklee College of Music with a bachelor’s degree in Composition and Electronic Production and Design in 2023, Alexander is currently pursuing a master’s degree in Composition at the Peabody Institute, studying with Dr. Sky Macklay.
+{{ site.description | markdownify }}
 
 ## Long Bio
 
