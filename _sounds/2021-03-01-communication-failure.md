@@ -1,7 +1,7 @@
 ---
 title_stylized: "<i>Communication Failure</i>"
 credit: Electronics by Joy Lee
-duration: 5<i>'</i>
+duration: 5′
 medium: for solo piano and fixed media
 score: "Wu-Communication_Failure.pdf"
 media_links: 

@@ -1,7 +1,7 @@
 ---
 title_stylized: "<i>The Water Method</i>"
 credit: Text by Kieun Song
-duration: 7<i>'</i> 30<i>"</i>
+duration: 7′30″
 medium: for mezzo-soprano, piano, and fixed media
 score: "Wu-The_Water_Method.pdf"
 media_links:

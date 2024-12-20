@@ -1,10 +1,10 @@
 ---
 title_stylized: "<i>jingle bach</i>"
-duration: Indefinite duration
+duration: indefinite duration
 medium: four-channel audio, one-channel video
 tags: installation video
 media_links:
-  - label: documentation
+  - label: video documentation
     url: https://www.youtube.com/watch?v=KpHrSDLRAIk
 ---
 

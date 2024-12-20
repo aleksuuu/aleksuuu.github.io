@@ -1,7 +1,7 @@
 ---
 title_stylized: "<i>this is not going to be interesting</i>"
 credit: video by Anqi Wang
-duration: 8<i>'</i>
+duration: 8′
 medium: fixed media (2-channel audio, 1-channel video)
 media_links: 
     - 

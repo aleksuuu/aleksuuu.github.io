@@ -11,15 +11,22 @@
   <ul>
     <li>
       <p class="compact-above">
-        {% if work.score %}
-          <a href="{{ site.baseurl }}/{{ site.pdfurl }}/{{ work.score }}" target="_blank">score</a>
-          {%- if work.media_links %}/{%- endif %}{% endif %}
-          {%- for url_label in work.media_links %}
-            {%- if forloop.length > 0 -%}
-              <a href={{ url_label.url }} target="_blank">{{ url_label.label }}</a>
+        {% if work.score or work.doc %}
+          {% if work.score %}
+            <a href="{{ site.baseurl }}/{{ site.pdfurl }}/{{ work.score }}" target="_blank">score</a>
+            {% if work.doc %}/{% endif %}
+          {% endif %}
+          {% if work.doc %}
+            <a href="{{ site.baseurl }}/{{ site.pdfurl }}/{{ work.doc }}" target="_blank">technical documentation</a>
+          {% endif %}
+        {% if work.media_links %}/{% endif %}
+        {% endif %}          
+        {%- for url_label in work.media_links %}
+          {%- if forloop.length > 0 -%}
+            <a href={{ url_label.url }} target="_blank">{{ url_label.label }}</a>
               {% unless forloop.last %}/{% endunless -%}
-            {%- endif -%}
-          {%- endfor -%}
+          {%- endif -%}
+        {%- endfor -%}
         </p>
       </li>
     </li>

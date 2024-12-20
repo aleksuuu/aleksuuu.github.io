@@ -1,6 +1,6 @@
 ---
 title_stylized: "<i>i remember remembering</i>"
-duration: 8<i>'</i>
+duration: 8′
 medium: for trumpet in C, drum set, piano, and live electronics
 score: "Wu-i_remember_remembering.pdf"
 tags: chamber electroacoustic

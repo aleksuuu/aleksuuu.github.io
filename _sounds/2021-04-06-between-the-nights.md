@@ -1,6 +1,6 @@
 ---
 title_stylized: "<i>Between the Nights</i>"
-duration: 5<i>'</i>
+duration: 5′
 medium: for solo cello
 score: "Wu-Between_the_Nights.pdf"
 media_links: 
