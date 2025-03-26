@@ -1,2 +1,5 @@
-{% assign formatted = include.url | replace: "vimeo.com", "player.vimeo.com/video" %}
+{% assign id_hash = include.url | replace: "https://vimeo.com/", "" %}
+{% assign id = id_hash | split: "/" | first %}
+{% assign hash = id_hash | split: "/" | last %}
+{% assign formatted = "https://player.vimeo.com/video/" | append: id | append: "?h=" | append: hash %}
 {% include video-embed-default.html url = formatted %}
