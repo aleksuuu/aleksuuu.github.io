@@ -7,10 +7,15 @@
     </li>
     {% for item in site.data.navigation %}
       <li>
-        {% assign linkWithHtml = item.link | append: ".html" %}
         <a
           href="{{ item.link }}"
-          {% if page.url == linkWithHtml or page.url == item.link %}class="current"{% endif %}
+          {% if item.name == "Home" %}
+          {% if page.url == item.link or page.url == item.link | append: ".html" %}
+          class="current"
+          {% endif %}
+          {% elsif page.url contains item.link %}
+          class="current"
+          {% endif %}
           class="nav-item">{{ item.name }}</a>
       </li>
     {% endfor %}
