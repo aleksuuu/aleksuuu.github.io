@@ -1,4 +1,6 @@
-{% if include.url contains "youtube" %}
+{% if include.embed %}
+  {{ include.embed }}
+{% elsif include.url contains "youtube" %}
   {% include youtube.html url = include.url %}
 {% elsif include.url contains "vimeo" %}
   {% include vimeo.html url = include.url %}

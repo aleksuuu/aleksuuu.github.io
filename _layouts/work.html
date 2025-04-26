@@ -33,7 +33,7 @@ layout: default
     {% endif %}
   </p>
   {% for url_label in page.media_links %}
-    {% include embedded-player.html url = url_label.url label = url_label.label %}
+    {% include embedded-player.html url = url_label.url label = url_label.label embed = url_label.embed %}
   {% endfor %}
   <p>
     {% for tag in page.tags %}
