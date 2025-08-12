@@ -36,6 +36,8 @@ collections:
     permalink: /:collection/:title
   other_works:
     output: true
+  categories:
+    output: true
   tags:
     output: true
 
@@ -45,6 +47,16 @@ defaults:
       type: "sounds"
     values:
       layout: "work"
+  - scope:
+      path: ""
+      type: "categories"
+    values:
+      layout: "category"
+  - scope:
+      path: ""
+      type: "tags"
+    values:
+      layout: "tag"
   - scope:
       path: ""
       type: ""

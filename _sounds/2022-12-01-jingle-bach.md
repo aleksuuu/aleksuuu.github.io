@@ -6,6 +6,7 @@ tags: installation video
 media_links:
   - label: video documentation
     url: https://www.youtube.com/watch?v=KpHrSDLRAIk
+category: installed
 ---
 
 _jingle bach_ is a generative audiovisual installation built upon two ideals—the baroque ideal anchored to faith and the postmodern ideal reinforced by its own commodification. It does not seem too far-fetched to intertwine the two (though it is not my intention, a cynic might argue a Bach chorale has the same ambition and objective as a Coke commercial), resulting in an iconoclastic rendition of Bach performed by rarefied commercials. The reconstruction and fragmentation make it inevitable for both Bach and the commercials to be taken literally here—the former is reduced to a combination of musical notes, the latter a visual representation of the products—even though, as Neil Postman puts it, commercials are “about products only in the sense that the story of Jonah is about the anatomy of whales.”

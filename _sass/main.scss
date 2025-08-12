@@ -86,12 +86,26 @@ nav {
   }
   li {
     padding: $default-padding 0;
+     /* This makes the sub-menu position relative to its parent li */   
+    position: relative;
   }
   text-align: center;
 }
 
 .nav-item {
   font-weight: 200;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  
+}
+.has-dropdown:hover > .dropdown-menu {
+  display: block;
 }
 
 li {
@@ -170,6 +184,7 @@ main {
 
 .work {
   h1 {
+    margin-block-start: 0em;
     margin-block-end: 0.3em;
   }
   p {

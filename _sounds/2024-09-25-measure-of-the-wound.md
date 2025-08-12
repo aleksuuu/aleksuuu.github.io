@@ -7,4 +7,5 @@ media_links:
   - label: recording
     url: https://vimeo.com/1038773793/00e80bcfdb
 tags: chamber
+category: composed
 ---

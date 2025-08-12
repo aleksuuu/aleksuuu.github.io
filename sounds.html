@@ -7,7 +7,7 @@ title: Sounds
 </h2>
 <p>
   {% for tag in site.tags %}
-    <a href="{{ site.baseurl }}/tags/{{ tag.tag_name }}" class="tag">
+    <a href="{{ site.baseurl }}/tags/{{ tag.title }}" class="tag">
       {{ tag.tag_name | replace: "-", "&nbsp;" }}</a>
   {% endfor %}
 </p>

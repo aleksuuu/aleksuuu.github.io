@@ -9,4 +9,5 @@ media_links:
         label: recording
         url: https://www.youtube.com/watch?v=tk8huYCs42k
 tags: solo electroacoustic
+category: composed
 ---

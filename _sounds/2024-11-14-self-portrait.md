@@ -8,6 +8,7 @@ tags: installation video
 media_links:
   - label: video documentation
     url: https://www.youtube.com/watch?v=RqeGNy59IpM
+category: installed
 ---
 
 *self-portrait* is a study of self-destruction. Machine-learning models are increasingly trained on recursively generated data, a cyclical process that could unwittingly corrupt their output. This deterioration mirrors the human condition; computers are simply following in our footsteps.

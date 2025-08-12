@@ -13,6 +13,7 @@ layout: default
 {% endif %}
 
 <div class="work">
+  <a href="{{ site.baseurl }}/categories/{{ page.category }}" class="tag">{{ page.category | replace: "-", "&nbsp;" }}</a>
   <h1>
     {{ page.title_stylized }}
     <span class="secondary">({{ page.date | date: "%Y" }})</span>

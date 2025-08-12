@@ -8,4 +8,5 @@ media_links:
         label: video
         url: https://www.youtube.com/watch?v=zvCi2rpp7cE
 tags: electronic video
+category: composed
 ---

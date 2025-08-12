@@ -8,4 +8,5 @@ media_links:
   - label: recording
     url: https://www.youtube.com/watch?v=dtFImEFU2N4
 tags: chamber vocal electroacoustic fixed-media
+category: composed
 ---

@@ -4,6 +4,15 @@
   link: /about
 - name: Sounds
   link: /sounds
+  sublinks:
+    - name: Composed
+      link: /category/composed
+    - name: Installed
+      link: /category/installed
+    - name: Improvised
+      link: /category/improvised
+- name: Tags
+  link: /tags
 - name: Other Works
   link: /other-works
 - name: Contact

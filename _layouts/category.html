@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<div>
+  <h2>{{ page.category_name | replace: "-", "&nbsp;" }}</h2>
+  <ul class="no-indent">
+    {% for work in site.sounds reversed %}
+      {% if work.category contains page.category_name %}
+        <li>
+          {% include work-row.html work=work %}
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>

@@ -6,7 +6,10 @@
       </header>
     </li>
     {% for item in site.data.navigation %}
-      <li>
+      <li
+        {% if item.sublinks %}
+        class="has-dropdown"
+        {% endif %}>
         <a
           href="{{ item.link }}"
           {% if item.name == "Home" %}
@@ -17,6 +20,15 @@
           class="current"
           {% endif %}
           class="nav-item">{{ item.name }}</a>
+        {% if item.sublinks %}
+          <ul class="dropdown-menu">
+            {% for sublink in item.sublinks %}
+              <li>
+                <a href="{{ sublink.url }}">{{ sublink.name }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
       </li>
     {% endfor %}
   </ul>
