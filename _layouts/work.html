@@ -45,8 +45,5 @@ layout: default
     in case there is a new line (sometimes text editors might add an empty new line at the end of the file)
   {% endcomment %}
   {% assign content = page.content | strip_newlines %}
-  {% if content != "" %}
-    <h2>Program Note</h2>
-    {{ content }}
-  {% endif %}
+  {{ content }}
 </div>

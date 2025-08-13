@@ -10,4 +10,4 @@ media_links:
     embed: "<iframe style='border: 0; width: 100%; height: 120px;' src='https://bandcamp.com/EmbeddedPlayer/track=3633400489/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/' seamless><a href='https://repairservice.bandcamp.com/track/automatic-buddha'>automatic buddha by Repair Service</a></iframe>"
 ---
 
-Originally written for the octophonic system in Baltimore's Red Room. Many aspects of the piece—difference tones, channel masking, extremely quiet sounds, etc.—depend on the spatialization. Therefore, the binaural mix above should be considered a mockup only.
+Originally written for the octophonic system in Baltimore's Red Room. Many aspects of the piece—difference tones, channel masking, extremely quiet sounds, etc.—heavily rely on the spatialization. Therefore, the binaural mix above should be considered a mockup only.
