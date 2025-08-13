@@ -8,7 +8,7 @@ title: Sounds
 <p>
   {% for category in site.categories %}
     <a href="{{ site.baseurl }}/sounds/categories/{{ category.title }}" class="category">
-      {{ category.category_name | replace: "-", "&nbsp;" }}</a>
+      {{ category.title | replace: "-", "&nbsp;" }}</a>
   {% endfor %}
 </p>
 <h2>
@@ -17,7 +17,7 @@ title: Sounds
 <p>
   {% for tag in site.tags %}
     <a href="{{ site.baseurl }}/sounds/tags/{{ tag.title }}" class="tag">
-      {{ tag.tag_name | replace: "-", "&nbsp;" }}</a>
+      {{ tag.title | replace: "-", "&nbsp;" }}</a>
   {% endfor %}
 </p>
 

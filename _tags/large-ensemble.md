@@ -1,3 +1,3 @@
 ---
-tag_name: large-ensemble
+title: large-ensemble
 ---

@@ -3,10 +3,10 @@ layout: default
 ---
 
 <div>
-  <h2>tag: {{ page.tag_name | replace: "-", "&nbsp;" }}</h2>
+  <h2>tag: {{ page.title | replace: "-", "&nbsp;" }}</h2>
   <ul class="no-indent">
     {% for work in site.sounds reversed %}
-      {% if work.tags contains page.tag_name %}
+      {% if work.tags contains page.title %}
         <li>
           {% include work-row.html work=work %}
         </li>

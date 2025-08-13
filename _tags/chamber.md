@@ -1,3 +1,3 @@
 ---
-tag_name: chamber
+title: chamber
 ---

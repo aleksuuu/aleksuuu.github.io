@@ -1,3 +1,3 @@
 ---
-tag_name: electroacoustic
+title: electroacoustic
 ---

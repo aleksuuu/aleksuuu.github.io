@@ -1,3 +1,3 @@
 ---
-tag_name: fixed-media
+title: fixed-media
 ---

@@ -1,3 +1,3 @@
 ---
-category_name: installed
+title: installed
 ---

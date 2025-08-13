@@ -1,3 +1,3 @@
 ---
-tag_name: graphic-score
+title: graphic-score
 ---
