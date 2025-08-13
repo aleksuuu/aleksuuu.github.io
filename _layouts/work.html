@@ -13,7 +13,7 @@ layout: default
 {% endif %}
 
 <div class="work">
-  <a href="{{ site.baseurl }}/categories/{{ page.category }}" class="tag">{{ page.category | replace: "-", "&nbsp;" }}</a>
+  <a href="{{ site.baseurl }}/sounds/categories/{{ page.category }}" class="category">{{ page.category | replace: "-", "&nbsp;" }}</a>
   <h1>
     {{ page.title_stylized }}
     <span class="secondary">({{ page.date | date: "%Y" }})</span>
@@ -38,7 +38,7 @@ layout: default
   {% endfor %}
   <p>
     {% for tag in page.tags %}
-      <a href="{{ site.baseurl }}/tags/{{ tag }}" class="tag secondary">{{ tag | replace: "-", "&nbsp;" }}</a>
+      <a href="{{ site.baseurl }}/sounds/tags/{{ tag }}" class="tag secondary">{{ tag | replace: "-", "&nbsp;" }}</a>
     {% endfor %}
 </p>
   {% comment %}

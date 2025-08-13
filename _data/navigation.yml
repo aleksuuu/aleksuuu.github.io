@@ -5,14 +5,14 @@
 - name: Sounds
   link: /sounds
   sublinks:
-    - name: Composed
-      link: /category/composed
-    - name: Installed
-      link: /category/installed
-    - name: Improvised
-      link: /category/improvised
-- name: Tags
-  link: /tags
+    - name: all
+      link: /sounds
+    - name: composed
+      link: /sounds/categories/composed
+    - name: installed
+      link: /sounds/categories/installed
+    - name: improvised
+      link: /sounds/categories/improvised
 - name: Other Works
   link: /other-works
 - name: Contact

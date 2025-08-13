@@ -3,11 +3,20 @@ layout: default
 title: Sounds
 ---
 <h2>
+  Categories
+</h2>
+<p>
+  {% for category in site.categories %}
+    <a href="{{ site.baseurl }}/sounds/categories/{{ category.title }}" class="category">
+      {{ category.category_name | replace: "-", "&nbsp;" }}</a>
+  {% endfor %}
+</p>
+<h2>
   Tags
 </h2>
 <p>
   {% for tag in site.tags %}
-    <a href="{{ site.baseurl }}/tags/{{ tag.title }}" class="tag">
+    <a href="{{ site.baseurl }}/sounds/tags/{{ tag.title }}" class="tag">
       {{ tag.tag_name | replace: "-", "&nbsp;" }}</a>
   {% endfor %}
 </p>

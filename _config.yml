@@ -38,8 +38,10 @@ collections:
     output: true
   categories:
     output: true
+    permalink: /sounds/:collection/:title
   tags:
     output: true
+    permalink: /sounds/:collection/:title
 
 defaults:
   - scope:
