@@ -242,6 +242,10 @@ main {
   padding: $default-padding;
   padding-top: $default-padding * 2;
   text-align: center;
+  iframe {
+    height: 187px;
+    margin: auto;
+  }
   .video {
     display: block;
     margin: auto;
@@ -257,6 +261,9 @@ main {
     aspect-ratio: 16 / 9;
     object-fit: scale-down;
     object-position: top;
+  }
+  p {
+    min-height: 75px;
   }
 }
 

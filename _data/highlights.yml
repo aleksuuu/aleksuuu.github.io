@@ -1,17 +1,23 @@
-- url: "https://www.youtube.com/watch?v=RuR-dufDbsA"
-  blurb: "<i>Countdown</i> (2024) for ensemble. 
-  <a href='sounds/countdown' class='secondary'>Read&nbsp;More</a>"
+- url: "https://www.youtube.com/watch?v=A4Dwml3fDUc"
+  blurb: "<i>disturbingly lively, frighteningly inert</i> (2025) for flute, bass clarinet, violin, cello, percussion, piano, and electronics. 
+  <a href='sounds/disturbingly-lively-frighteningly-inert' class='secondary'>read&nbsp;more&rarr;</a>"
 - url: "microtonal-lab.png"
   blurb: "<a href='https://aleksuuu.github.io/microtonal-lab/'>Microtonal Lab</a>: a microtonal ear-training tool."
+- url: "https://www.youtube.com/watch?v=RuR-dufDbsA"
+  blurb: "<i>Countdown</i> (2024) for ensemble. 
+  <a href='sounds/countdown' class='secondary'>read&nbsp;more&rarr;</a>"
+- embed: '<iframe style="border: 0; width: 187px;" src="https://bandcamp.com/EmbeddedPlayer/track=3633400489/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://repairservice.bandcamp.com/track/automatic-buddha">automatic buddha by Repair Service</a></iframe>'
+  blurb: "<i>automatic buddha</i> (2025) 8-channel audio 
+  <a href='sounds/automatic-buddha' class='secondary'>read&nbsp;more&rarr;</a>"
 - url: "https://www.youtube.com/watch?v=zvCi2rpp7cE"
   blurb: "<i>this is not going to be interesting</i> (2023). Fixed media with video by Anqi Wang. 
-  <a href='sounds/this-is-not-going-to-be-interesting' class='secondary'>Read&nbsp;More</a>"
+  <a href='sounds/this-is-not-going-to-be-interesting' class='secondary'>read&nbsp;more&rarr;</a>"
 - url: "https://www.youtube.com/watch?v=fM5pLUBeck0"
   blurb: "<i>I hear trees and power lines</i> (2024) for three percussionists. 
-  <a href='sounds/i-hear-trees-and-power-lines' class='secondary'>Read&nbsp;More</a>"
+  <a href='sounds/i-hear-trees-and-power-lines' class='secondary'>read&nbsp;more&rarr;</a>"
 - url: "https://www.youtube.com/watch?v=-sgpVV-Tn3U"
   blurb: "<i>(intro)introintrointrointrointr</i> (2024) for ensemble. 
-  <a href='sounds/(intro)introintrointrointrointr' class='secondary'>Read&nbsp;More</a>"
+  <a href='sounds/(intro)introintrointrointrointr' class='secondary'>read&nbsp;more&rarr;</a>"
 - url: "https://www.youtube.com/watch?v=dtFImEFU2N4"
   blurb: "<i>The Water Method</i> (2024) for mezzo-soprano, piano, and electronics. 
-  <a href='sounds/the-water-method' class='secondary'>Read&nbsp;More</a>"
+  <a href='sounds/the-water-method' class='secondary'>read&nbsp;more&rarr;</a>"

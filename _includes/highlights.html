@@ -1,9 +1,13 @@
 <div class="cards">
   {% for highlight in site.data.highlights %}
-    {% include highlight-card.html 
-     title = highlight.title
-     url = highlight.url
-     alt = highlight.alt
-     blurb = highlight.blurb %}
+    {% include highlight-card.html title = highlight.title url = highlight.url embed = highlight.embed alt = highlight.alt blurb = highlight.blurb %}
   {% endfor %}
 </div>
+<p>
+  <a href="/sounds">
+    Hear more sounds&rarr;</a>
+  /
+  <a href="/other-works">
+    See my other works&rarr;
+  </a>
+</p>
