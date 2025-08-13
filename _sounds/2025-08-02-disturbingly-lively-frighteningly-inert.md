@@ -1,7 +1,7 @@
 ---
 title_stylized: "<i>disturbingly lively, frighteningly inert</i>"
 duration: 8′30″
-medium: for flute, bass clarinet, violin, cello, percussion, piano, and electronic
+medium: for flute, bass clarinet, violin, cello, percussion, piano, and electronics
 score: "Wu-disturbingly-concert.pdf"
 media_links:
   - label: recording
