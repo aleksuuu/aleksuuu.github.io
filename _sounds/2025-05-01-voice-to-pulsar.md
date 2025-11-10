@@ -1,5 +1,5 @@
 ---
-title_stylized: "<i>voice-to-pulsar system</i>"
+title_stylized: "voice-to-pulsar system"
 medium: custom Max/MSP patch with FluCoMa, monome grid, Midi Fighter Twister, microphone
 media_links:
   - label: documentation
