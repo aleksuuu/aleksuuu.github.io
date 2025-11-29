@@ -14,7 +14,7 @@ performed by Brightwork Ensemble
 
 8′30″
 
-### [**score**](https://aleksuuu.github.io/assets/pdfs/Wu-disturbingly-concert.pdf) (if time is limited, look at mm. 19–37 [1:20–2:29] and mm. 75–end [5:20–8:34])
+### <a href="https://aleksuuu.github.io/assets/pdfs/Wu-disturbingly-concert.pdf" target="_blank"><strong>score</strong></a> (if time is limited, look at mm. 19–37 [1:20–2:29] and mm. 75–end [5:20–8:34])
 
 <iframe class="video" src="https://www.youtube.com/embed/A4Dwml3fDUc"
         frameborder="0" allow="fullscreen; picture-in-picture; web-share"
@@ -28,7 +28,7 @@ performed by Old Bay New Music
 
 10′30″
 
-### [**score**](https://aleksuuu.github.io/assets/pdfs/Wu-Countdown.pdf) (if time is limited, start at m. 58 [3:28])
+### <a href="https://aleksuuu.github.io/assets/pdfs/Wu-Countdown.pdf" target="_blank"><strong>score</strong></a> (if time is limited, start at m. 58 [3:28])
 
 <iframe class="video" src="https://www.youtube.com/embed/RuR-dufDbsA"
         frameborder="0" allow="fullscreen; picture-in-picture; web-share"
@@ -42,7 +42,7 @@ performed by Ensemble Linea
 
 8′
 
-### [**score**](https://aleksuuu.github.io/assets/pdfs/Wu-intros.pdf) (if time is limited, start at m. 62 [2:34])
+### <a href="https://aleksuuu.github.io/assets/pdfs/Wu-intros.pdf" target="_blank"><strong>score</strong></a> (if time is limited, start at m. 62 [2:34])
 
 <iframe class="video" src="https://www.youtube.com/embed/-sgpVV-Tn3U"
         frameborder="0" allow="fullscreen; picture-in-picture; web-share"
@@ -54,9 +54,9 @@ performed by Ensemble Linea
 
 13′30″
 
-### [**technical documentation**](https://aleksuuu.github.io/assets/pdfs/Wu-automatic_buddha.pdf)(if time is limited, listen to 0:00–3:45)
+### <a href="https://aleksuuu.github.io/assets/pdfs/Wu-automatic_buddha.pdf" target="_blank"><strong>technical documentation</strong></a> (if time is limited, listen to 0:00–3:45)
 
-<iframe style='border: 0; width: 100%; height: 120px;' src='https://bandcamp.com/EmbeddedPlayer/track=3633400489/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/' seamless><a href='https://repairservice.bandcamp.com/track/automatic-buddha'>automatic buddha by Repair Service</a></iframe>
+<iframe width="100%" height="140" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2221216271&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/aleksuuu" title="Alexander Wu" target="_blank" style="color: #cccccc; text-decoration: none;">Alexander Wu</a> · <a href="https://soundcloud.com/aleksuuu/automatic-buddha" title="automatic buddha" target="_blank" style="color: #cccccc; text-decoration: none;">automatic buddha</a></div>
 
 ## 5. Free Improvisation (with Maxwell Gong) (2025)
 
@@ -64,7 +64,7 @@ custom Max/MSP patch, springless spring reverb, contact mics, transducers, misce
 
 11′13″
 
-### [**technical documentation**](https://aleksuuu.github.io/assets/pdfs/Wu-springless_spring_reverb.pdf)(if time is limited, start at 5:30)
+### <a href="https://aleksuuu.github.io/assets/pdfs/Wu-springless_spring_reverb.pdf" target="_blank"><strong>technical documentation</strong></a> (if time is limited, start at 5:30)
 
 <iframe class="video" src="https://www.youtube.com/embed/egd8Y2wZkTg"
         frameborder="0" allow="fullscreen; picture-in-picture; web-share"
