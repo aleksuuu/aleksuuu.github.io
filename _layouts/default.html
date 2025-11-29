@@ -23,7 +23,7 @@
     <body>
       <div class="not-footer">
         {% include nav.html %}
-        <main>{{ content }}</main>
+        <main class="{% if page.main_class %}{{ page.main_class }}{% endif %}">{{ content }}</main>
       </div>
       {% include footer.html %}</body>
   </head>
