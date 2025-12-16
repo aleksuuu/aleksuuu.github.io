@@ -48,13 +48,13 @@ custom Max/MSP patch with FluCoMa, monome grid, Midi Fighter Twister, microphone
 
 8′53″
 
-### <a href="https://aleksuuu.github.io/sounds/voice-to-pulsar" target="_blank"><strong>technical documentation</strong></a> (if time is limited, start at 5:30)
+### <a href="https://aleksuuu.github.io/sounds/voice-to-pulsar" target="_blank"><strong>technical documentation</strong></a> (if time is limited, start at 0:50)
 
-<iframe class="video" src="https://www.youtube.com/watch?v=TyvOHKWXlyM"
+<iframe class="video" src="https://www.youtube.com/embed/TyvOHKWXlyM"
         frameborder="0" allow="fullscreen; picture-in-picture; web-share"
         allowfullscreen></iframe>
 
-The system is made up of two parts: a pulsar synthesizer and an algorithm that translates my voice to a set of parameters for the synthesizer.
+The system is made up of two parts: a pulsar synthesizer and an algorithm that sometimes translates my voice to a set of parameters for the synthesizer.
 
 ## 5. *Planning Obsolescence #1: Excel* (2025)
 
@@ -64,7 +64,7 @@ Microsoft Excel, Python, Max/MSP
 
 ### (if time is limited, start at 4:00)
 
-<iframe class="video" src="https://www.youtube.com/watch?v=v53BP83Ujqw"
+<iframe class="video" src="https://www.youtube.com/embed/v53BP83Ujqw"
         frameborder="0" allow="fullscreen; picture-in-picture; web-share"
         allowfullscreen></iframe>
 
@@ -76,7 +76,7 @@ CRT TV, camera, servo motors, magnets, cassette players, etc. (see documentation
 
 ### <a href="https://aleksuuu.github.io/assets/pdfs/Wu-self-portrait.pdf" target="_blank"><strong>technical documentation</strong></a> 
 
-<iframe class="video" src="https://www.youtube.com/watch?v=RqeGNy59IpM"
+<iframe class="video" src="https://www.youtube.com/embed/RqeGNy59IpM"
         frameborder="0" allow="fullscreen; picture-in-picture; web-share"
         allowfullscreen></iframe>
 
