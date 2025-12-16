@@ -69,3 +69,5 @@ custom Max/MSP patch, springless spring reverb, contact mics, transducers, misce
 <iframe class="video" src="https://www.youtube.com/embed/egd8Y2wZkTg"
         frameborder="0" allow="fullscreen; picture-in-picture; web-share"
         allowfullscreen></iframe>
+
+(I am the person on the left playing electronics)
