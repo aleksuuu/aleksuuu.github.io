@@ -1,0 +1,59 @@
+---
+layout: default
+title: Events
+---
+
+{% comment %} https://talk.jekyllrb.com/t/site-time-tomorrow/6658/14 {% endcomment %}
+{% assign today = "now" | date: "%F" | to_time %}
+
+<h2>
+  Upcoming Events
+</h2>
+{% assign upcoming_events = site.events | where_exp: "event", "event.date >= today" | sort: "date" %}
+
+{% if upcoming_events.size > 0 %}
+  <table>
+    {% for event in upcoming_events %}
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Event</th>
+          <th>Location</th>
+          <th>Show Time (not doors!)</th>
+        </tr>
+      </thead>
+      <tr>
+        {% include event-row.html event=event %}
+      </tr>
+    {% endfor %}
+  </table>
+
+{% else %}
+  <p>No upcoming events at this time.</p>
+{% endif %}
+
+<h2>
+  Past Events
+</h2>
+{% assign past_events = site.events | where_exp: "event", "event.date < today" | sort: "date" | reverse %}
+
+{% if past_events.size > 0 %}
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Event</th>
+        <th>Location</th>
+        <th>Show Time (not doors!)</th>
+      </tr>
+    </thead>
+    {% for event in past_events %}
+      <tr>
+        {% include event-row.html event=event %}
+      </tr>
+    {% endfor %}
+  </table>
+
+{% else %}
+  <p>No past events found.</p>
+{% endif %}

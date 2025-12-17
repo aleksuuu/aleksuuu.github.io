@@ -1,0 +1,24 @@
+{% assign event = include.event %}
+
+<td>
+  <b>
+    {{ event.date | date: "%m/%d/%Y" }}
+  </b>
+</td>
+<td>
+  {% if event.ext_url %}
+    <a href="{{ event.ext_url }}">{{ event.title_stylized }}</a>
+  {% else %}
+    {{ event.title_stylized }}
+  {% endif %}
+</td>
+<td>
+  {% if event.location %}
+    {{ event.location }}
+  {% endif %}
+</td>
+<td>
+  {% if event.time %}
+    {{ event.time }}
+  {% endif %}
+</td>

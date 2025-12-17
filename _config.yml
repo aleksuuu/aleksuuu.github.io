@@ -36,6 +36,8 @@ collections:
   sounds:
     output: true
     permalink: /:collection/:title
+  events:
+    output: false
   other_works:
     output: true
   categories:
@@ -49,6 +51,11 @@ defaults:
   - scope:
       path: ""
       type: "sounds"
+    values:
+      layout: "work"
+  - scope:
+      path: ""
+      type: "events"
     values:
       layout: "work"
   - scope:
