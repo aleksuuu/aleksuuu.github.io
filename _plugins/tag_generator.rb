@@ -15,3 +15,5 @@ def generate_tag_file(tag)
     file << "---\nlayout: tag\ntitle: #{tag}\n---\n"
     end
 end
+
+# this only runs locally to generate tag files, and the tag files are included in the commit

@@ -3,57 +3,77 @@ layout: default
 title: Events
 ---
 
-{% comment %} https://talk.jekyllrb.com/t/site-time-tomorrow/6658/14 {% endcomment %}
-{% assign today = "now" | date: "%F" | to_time %}
+<h2>Upcoming Events</h2>
+<table id="upcoming-events">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Event</th>
+      <th>Location</th>
+      <th>Show Time (not doors!)</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
 
-<h2>
-  Upcoming Events
-</h2>
-{% assign upcoming_events = site.events | where_exp: "event", "event.date >= today" | sort: "date" %}
+<h2>Past Events</h2>
+<table id="past-events">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Event</th>
+      <th>Location</th>
+      <th>Show Time (not doors!)</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
 
-{% if upcoming_events.size > 0 %}
-  <table>
-    {% for event in upcoming_events %}
-      <thead>
-        <tr>
-          <th>Date</th>
-          <th>Event</th>
-          <th>Location</th>
-          <th>Show Time (not doors!)</th>
-        </tr>
-      </thead>
-      <tr>
-        {% include event-row.html event=event %}
-      </tr>
+<template id="event-row-template">
+  <tr class="event-row">
+    {% include event-row.html %}
+  </tr>
+</template>
+
+<script>
+  window.EVENTS = [
+    {% for event in site.events %}
+      {
+        date: "{{ event.date | date: '%Y-%m-%d' }}",
+        html: `{% include event-row.html event=event %}`
+      }{% unless forloop.last %},{% endunless %}
     {% endfor %}
-  </table>
+  ];
+</script>
 
-{% else %}
-  <p>No upcoming events at this time.</p>
-{% endif %}
+<script>
+  (function () {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const yesterday = new Date(today-8.64e7);
 
-<h2>
-  Past Events
-</h2>
-{% assign past_events = site.events | where_exp: "event", "event.date < today" | sort: "date" | reverse %}
+    const upcomingBody = document.querySelector('#upcoming-events tbody');
+    const pastBody = document.querySelector('#past-events tbody');
 
-{% if past_events.size > 0 %}
-  <table>
-    <thead>
-      <tr>
-        <th>Date</th>
-        <th>Event</th>
-        <th>Location</th>
-        <th>Show Time (not doors!)</th>
-      </tr>
-    </thead>
-    {% for event in past_events %}
-      <tr>
-        {% include event-row.html event=event %}
-      </tr>
-    {% endfor %}
-  </table>
+    window.EVENTS.forEach(event => {
+      const eventDate = new Date(event.date + 'T00:00:00');
 
-{% else %}
-  <p>No past events found.</p>
-{% endif %}
+      const row = document.createElement('tr');
+      row.innerHTML = event.html;
+
+      if (eventDate >= yesterday) {
+        upcomingBody.appendChild(row);
+      } else {
+        pastBody.appendChild(row);
+      }
+    });
+
+    if (!upcomingBody.children.length) {
+      upcomingBody.innerHTML = `<tr><td colspan="4">No upcoming events at this time.</td></tr>`;
+    }
+
+    if (!pastBody.children.length) {
+      pastBody.innerHTML = `<tr><td colspan="4">No past events found.</td></tr>`;
+    }
+  })();
+</script>
