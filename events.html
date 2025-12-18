@@ -37,7 +37,8 @@ title: Events
 
 <script>
   window.EVENTS = [
-    {% for event in site.events %}
+    {% assign sorted_events = site.events | sort: "date" %}
+    {% for event in sorted_events %}
       {
         date: "{{ event.date | date: '%Y-%m-%d' }}",
         html: `{% include event-row.html event=event %}`
@@ -48,32 +49,44 @@ title: Events
 
 <script>
   (function () {
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-    const yesterday = new Date(today-8.64e7);
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const yesterday = new Date(today - 8.64e7);
 
-    const upcomingBody = document.querySelector('#upcoming-events tbody');
-    const pastBody = document.querySelector('#past-events tbody');
+  const upcomingBody = document.querySelector("#upcoming-events tbody");
+  const pastBody = document.querySelector("#past-events tbody");
 
-    window.EVENTS.forEach(event => {
-      const eventDate = new Date(event.date + 'T00:00:00');
+  const upcoming = [];
+  const past = [];
 
-      const row = document.createElement('tr');
-      row.innerHTML = event.html;
+  window.EVENTS.forEach((event) => {
+    const eventDate = new Date(event.date + "T00:00:00");
 
-      if (eventDate >= yesterday) {
-        upcomingBody.appendChild(row);
-      } else {
-        pastBody.appendChild(row);
-      }
-    });
-
-    if (!upcomingBody.children.length) {
-      upcomingBody.innerHTML = `<tr><td colspan="4">No upcoming events at this time.</td></tr>`;
+    if (eventDate >= today) {
+      upcoming.push(event);
+    } else {
+      past.push(event);
     }
+  });
 
-    if (!pastBody.children.length) {
-      pastBody.innerHTML = `<tr><td colspan="4">No past events found.</td></tr>`;
-    }
+  upcoming.forEach((event) => {
+    const row = document.createElement("tr");
+    row.innerHTML = event.html;
+    upcomingBody.appendChild(row);
+  });
+
+  past.reverse().forEach((event) => {
+    const row = document.createElement("tr");
+    row.innerHTML = event.html;
+    pastBody.appendChild(row);
+  });
+
+  if (!upcomingBody.children.length) {
+    upcomingBody.innerHTML = `<tr><td colspan="4">No upcoming events at this time.</td></tr>`;
+  }
+
+  if (!pastBody.children.length) {
+    pastBody.innerHTML = `<tr><td colspan="4">No past events found.</td></tr>`;
+  }
   })();
 </script>
