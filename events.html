@@ -51,7 +51,7 @@ title: Events
   (function () {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
-  const yesterday = new Date(today - 8.64e7);
+  const yesterday = new Date(today - 8.64e7); // use yesterday to avoid time zone issues
 
   const upcomingBody = document.querySelector("#upcoming-events tbody");
   const pastBody = document.querySelector("#past-events tbody");
