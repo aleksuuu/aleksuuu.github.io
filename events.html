@@ -62,7 +62,7 @@ title: Events
   window.EVENTS.forEach((event) => {
     const eventDate = new Date(event.date + "T00:00:00");
 
-    if (eventDate >= today) {
+    if (eventDate >= yesterday) {
       upcoming.push(event);
     } else {
       past.push(event);
