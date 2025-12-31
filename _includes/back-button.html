@@ -1,0 +1,5 @@
+{% if include.name %}
+  <a class="button-style" href={{ include.url }}>Back to {{ include.name }}</a>
+{% else %}
+  <a class="button-style" href={{ include.url }}>Back</a>
+{% endif %}

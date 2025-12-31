@@ -3,6 +3,7 @@ layout: default
 ---
 
 <div>
+  {% include back-button.html name="All Sounds" url="/sounds" %}
   <h2>tag: {{ page.title | replace: "-", "&nbsp;" }}</h2>
   <ul class="no-indent">
     {% for work in site.sounds reversed %}

@@ -1,7 +1,7 @@
 // COLORS
 $primary-color: rgba(0, 0, 0, 0.7);
 $primary-background-color: rgba(0, 0, 0, 0.04);
-$transparent-color: rgba(0,0,0,0);
+$transparent-color: rgba(0, 0, 0, 0);
 $accent-color: rgb(0, 128, 0);
 $secondary-accent-color: rgba($accent-color, 0.5);
 $tertiary-accent-color: #ddf5db;
@@ -66,7 +66,7 @@ a {
   border-width: 1px;
   border-style: solid;
   border-color: $transparent-color;
-   &:hover {
+  &:hover {
     color: $secondary-accent-color;
     cursor: $cursor-pointer, auto;
     border-color: $primary-color;
@@ -84,7 +84,6 @@ img {
   max-width: 100%;
 }
 
-
 nav {
   padding-left: $sectional-padding;
   float: left;
@@ -93,7 +92,7 @@ nav {
   }
   li {
     padding: $default-padding 0;
-     /* This makes the sub-menu position relative to its parent li */   
+    /* This makes the sub-menu position relative to its parent li */
     position: relative;
   }
   text-align: center;
@@ -104,13 +103,13 @@ nav {
 }
 
 .dropdown-menu {
-  max-height: 0; 
+  max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
-  
-  min-width: 150px; 
+
+  min-width: 150px;
   text-align: center;
-  padding: 0; 
+  padding: 0;
   li {
     padding: $default-padding * 0.5 0;
     .nav-item {
@@ -185,7 +184,8 @@ main {
   text-decoration: none;
   border-radius: 5px;
 }
-.category {
+.category,
+.button-style {
   padding: $default-padding * 0.5;
   box-shadow: $box-shadow;
   border: 1px solid $secondary-accent-color;
@@ -298,7 +298,6 @@ td {
   min-width: $sectional-padding;
 }
 
-
 /* Media query for smaller screens */
 @media screen and (max-width: 850px) {
   main {
@@ -322,7 +321,6 @@ td {
     width: 80%;
   }
 }
-
 
 .wut {
   display: none;

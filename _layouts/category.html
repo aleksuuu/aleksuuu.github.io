@@ -3,7 +3,8 @@ layout: default
 ---
 
 <div>
-  <h2>sounds {{ page.title | replace: "-", "&nbsp;" }}</h2>
+  {% include back-button.html name="All Sounds" url="/sounds" %}
+  <h2>Sounds {{ page.title | capitalize }}</h2>
   <ul class="no-indent">
     {% for work in site.sounds reversed %}
       {% if work.category contains page.title %}

@@ -5,13 +5,13 @@
 - name: Sounds
   link: /sounds
   sublinks:
-    - name: all
+    - name: All
       link: /sounds
-    - name: composed
+    - name: Composed
       link: /sounds/categories/composed
-    - name: installed
+    - name: Installed
       link: /sounds/categories/installed
-    - name: improvised
+    - name: Improvised
       link: /sounds/categories/improvised
 - name: Other Works
   link: /other-works
