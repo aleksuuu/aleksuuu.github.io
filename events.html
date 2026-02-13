@@ -53,8 +53,10 @@ title: Events
   today.setHours(0, 0, 0, 0);
   const yesterday = new Date(today - 8.64e7); // use yesterday to avoid time zone issues
 
-  const upcomingBody = document.querySelector("#upcoming-events tbody");
-  const pastBody = document.querySelector("#past-events tbody");
+  const upcomingTable = document.querySelector("#upcoming-events");
+  const pastTable = document.querySelector("#past-events");
+  const upcomingBody = upcomingTable.querySelector("tbody");
+  const pastBody = pastTable.querySelector("tbody");
 
   const upcoming = [];
   const past = [];
@@ -68,25 +70,50 @@ title: Events
       past.push(event);
     }
   });
-
-  upcoming.forEach((event) => {
-    const row = document.createElement("tr");
-    row.innerHTML = event.html;
-    upcomingBody.appendChild(row);
-  });
-
-  past.reverse().forEach((event) => {
-    const row = document.createElement("tr");
-    row.innerHTML = event.html;
-    pastBody.appendChild(row);
-  });
-
-  if (!upcomingBody.children.length) {
+  // Handle Upcoming Events
+  if (upcoming.length > 0) {
+    upcoming.forEach((event) => {
+      const row = document.createElement("tr");
+      row.innerHTML = event.html;
+      upcomingBody.appendChild(row);
+    });
+  } else {
+    // Hide the header and show a message
+    upcomingTable.querySelector("thead").style.display = "none";
     upcomingBody.innerHTML = `<tr><td colspan="4">No upcoming events at this time.</td></tr>`;
   }
 
-  if (!pastBody.children.length) {
+  // Handle Past Events
+  if (past.length > 0) {
+    past.reverse().forEach((event) => {
+      const row = document.createElement("tr");
+      row.innerHTML = event.html;
+      pastBody.appendChild(row);
+    });
+  } else {
+    // Hide the header and show a message
+    pastTable.querySelector("thead").style.display = "none";
     pastBody.innerHTML = `<tr><td colspan="4">No past events found.</td></tr>`;
   }
+
+  // upcoming.forEach((event) => {
+  //   const row = document.createElement("tr");
+  //   row.innerHTML = event.html;
+  //   upcomingBody.appendChild(row);
+  // });
+
+  // past.reverse().forEach((event) => {
+  //   const row = document.createElement("tr");
+  //   row.innerHTML = event.html;
+  //   pastBody.appendChild(row);
+  // });
+
+  // if (!upcomingBody.children.length) {
+  //   upcomingBody.innerHTML = `<tr><td colspan="4">No upcoming events at this time.</td></tr>`;
+  // }
+
+  // if (!pastBody.children.length) {
+  //   pastBody.innerHTML = `<tr><td colspan="4">No past events found.</td></tr>`;
+  // }
   })();
 </script>
