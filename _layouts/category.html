@@ -4,6 +4,7 @@ layout: default
 
 <div>
   {% include back-button.html name="All Sounds" url="/sounds" %}
+  <img src="{{ site.imgurl | absolute_url }}/{{page.image}}" alt={{page.alt}}>
   <h2>Sounds {{ page.title | capitalize }}</h2>
   <ul class="no-indent">
     {% for work in site.sounds reversed %}
