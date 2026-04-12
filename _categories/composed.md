@@ -1,5 +1,5 @@
 ---
 title: composed
-image: "sketch.png"
-alt: "A blurred musical sketch"
+image: "sketch.jpeg"
+alt: "Musical sketches with a pencil in the foreground"
 ---
