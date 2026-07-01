@@ -1,10 +1,12 @@
 // COLORS
-$primary-color: rgba(0, 0, 0, 0.7);
-$primary-background-color: rgba(0, 0, 0, 0.1);
+$primary-color: #444444;
+$primary-background-color: #E5E5E5;
 $transparent-color: rgba(0, 0, 0, 0);
-$accent-color: rgb(0, 128, 0);
+/* $accent-color: rgb(0, 128, 0); */
+$accent-color: #0F2977;
 $secondary-accent-color: rgba($accent-color, 0.5);
-$tertiary-accent-color: #ddf5db;
+/* $tertiary-accent-color: #ddf5db; */
+$tertiary-accent-color: rgba($accent-color, 0.1);
 $secondary-color: gray;
 $footer-background-color: rgba(128, 128, 128, 0.05);
 $footer-divider-color: #e5e5e5;
@@ -293,7 +295,7 @@ td {
 }
 th,
 td {
-  border: 1px solid $secondary-accent-color;
+  border: 1px solid $tertiary-accent-color;
   overflow-wrap: break-word;
   min-width: $sectional-padding;
 }
